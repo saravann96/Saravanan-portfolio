@@ -498,7 +498,7 @@ main { position: relative; z-index: 1; }
   </ul>
   <div class="nav-right">
     <button class="theme-btn" id="themeBtn">🌙</button>
-    <a href="mailto:saravann96@gmail.com" class="nav-cta">Hire Me</a>
+    <a href="/cdn-cgi/l/email-protection#96e5f7e4f7e0f7f8f8afa0d6f1fbf7fffab8f5f9fb" class="nav-cta">Hire Me</a>
     <button class="hamburger" id="hamburgerBtn">
       <span></span><span></span><span></span>
     </button>
@@ -556,7 +556,7 @@ main { position: relative; z-index: 1; }
           <div class="about-meta">
             <div class="about-meta-row"><span class="ico">📍</span>India</div>
             <div class="about-meta-row"><span class="ico">📞</span><a href="https://wa.me/919842889799" target="_blank">+91-9842889799</a></div>
-            <div class="about-meta-row"><span class="ico">✉️</span><a href="mailto:saravann96@gmail.com">saravann96@gmail.com</a></div>
+            <div class="about-meta-row"><span class="ico">✉️</span><a href="/cdn-cgi/l/email-protection#87f4e6f5e6f1e6e9e9beb1c7e0eae6eeeba9e4e8ea"><span class="__cf_email__" data-cfemail="3b485a495a4d5a5555020d7b5c565a525715585456">[email&#160;protected]</span></a></div>
             <div class="about-meta-row"><span class="ico">🎓</span>B.E. CSE · P.A. College (2018)</div>
             <div class="about-meta-row"><span class="ico">🏆</span>UiPath Certified Developer Professional</div>
             <div class="about-meta-row"><span class="ico">💼</span><a href="https://www.linkedin.com/in/saravanan-nagarajan-95a509100/" target="_blank">LinkedIn Profile</a></div>
@@ -819,9 +819,9 @@ main { position: relative; z-index: 1; }
       <h3>Open to new automation challenges</h3>
       <p>Whether you're looking to automate business processes, build Document Understanding pipelines, or scale your RPA Center of Excellence — I'd love to discuss how I can add value to your team or project.</p>
       <div class="contact-links">
-        <a href="mailto:saravann96@gmail.com" class="contact-link">
+        <a href="/cdn-cgi/l/email-protection#7a091b081b0c1b1414434c3a1d171b131654191517" class="contact-link">
           <div class="contact-link-icon ci-b">✉️</div>
-          <div><div>saravann96@gmail.com</div><div class="contact-link-detail">Email — fastest response</div></div>
+          <div><div><span class="__cf_email__" data-cfemail="c0b3a1b2a1b6a1aeaef9f680a7ada1a9aceea3afad">[email&#160;protected]</span></div><div class="contact-link-detail">Email — fastest response</div></div>
         </a>
         <a href="https://wa.me/919842889799" target="_blank" class="contact-link">
           <div class="contact-link-icon ci-a">📞</div>
@@ -839,11 +839,12 @@ main { position: relative; z-index: 1; }
     </div>
     <div class="contact-form reveal-d">
       <h4>Send a Message</h4>
-      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Your full name" required/></div>
-      <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></div>
-      <div class="form-group"><label>Subject</label><input type="text" placeholder="RPA Project / Hiring / Collaboration" required/></div>
-      <div class="form-group"><label>Message</label><textarea placeholder="Tell me about your automation requirements..." required></textarea></div>
-      <button class="form-submit" onclick="handleSend(this)">🚀 &nbsp;Send Message</button>
+      <div class="form-group"><label>Your Name</label><input id="cf-name" type="text" placeholder="Your full name" required/></div>
+      <div class="form-group"><label>Email</label><input id="cf-email" type="email" placeholder="your@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></div>
+      <div class="form-group"><label>Subject</label><input id="cf-subject" type="text" placeholder="RPA Project / Hiring / Collaboration" required/></div>
+      <div class="form-group"><label>Message</label><textarea id="cf-message" placeholder="Tell me about your automation requirements..." required></textarea></div>
+      <button id="cf-submit" class="form-submit" onclick="handleSend(this)">🚀 &nbsp;Send Message</button>
+      <div id="cf-feedback" style="display:none;margin-top:14px;padding:12px 16px;border-radius:8px;font-size:13px;font-weight:500;"></div>
     </div>
   </div>
 </section>
@@ -853,10 +854,10 @@ main { position: relative; z-index: 1; }
 <footer>
   <span>© 2026 Saravanan Nagarajan · RPA Developer · India</span>
   <span>Built with ❤️ & CSS Sorcery</span>
-  <span><a href="mailto:saravann96@gmail.com">saravann96@gmail.com</a></span>
+  <span><a href="/cdn-cgi/l/email-protection#e39082918295828d8ddad5a3848e828a8fcd808c8e"><span class="__cf_email__" data-cfemail="ef9c8e9d8e998e8181d6d9af88828e8683c18c8082">[email&#160;protected]</span></a></span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // CURSOR
 const cur = document.getElementById('cur');
 const curRing = document.getElementById('cur-ring');
@@ -983,35 +984,75 @@ document.getElementById('hamburgerBtn').onclick = function () {
   nl.style.cssText = open ? '' : 'display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--bg2);padding:20px 24px;border-bottom:1px solid var(--border);gap:14px;z-index:200';
 };
 
-// FORM SUBMIT
+// FORM SUBMIT — Google Forms integration
+// ─────────────────────────────────────────────────────────────────────────────
+// SETUP INSTRUCTIONS:
+//   1. Open your Google Form → 3-dot menu → "Get pre-filled link"
+//   2. Fill dummy values, click "Get link", copy the URL
+//   3. From the URL extract:
+//        • The FORM_ID for GOOGLE_FORM_URL
+//        • Each "entry.XXXXXXXXX" value for the four fields below
+//   4. Replace the four placeholder entry IDs with your real ones
+// ─────────────────────────────────────────────────────────────────────────────
+const GOOGLE_FORM_URL    = "https://docs.google.com/forms/d/e/1FAIpQLSeWthuOFkzEDP8Mll0hqPUJQceRi_N0V7z3ZgVlO9ywNbZKIQ/formResponse";
+const FORM_ENTRY_NAME    = "entry.927783300";    // ← Your Name field
+const FORM_ENTRY_EMAIL   = "entry.1280614385";   // ← Email field
+const FORM_ENTRY_SUBJECT = "entry.965416746"; // ← Subject field
+const FORM_ENTRY_MESSAGE = "entry.1470190638"; // ← Message field
+
 function handleSend(btn) {
+  const nameEl    = document.getElementById('cf-name');
+  const emailEl   = document.getElementById('cf-email');
+  const subjectEl = document.getElementById('cf-subject');
+  const messageEl = document.getElementById('cf-message');
+  const feedback  = document.getElementById('cf-feedback');
 
-  const formURL = "https://docs.google.com/forms/d/e/FORM_ID/formResponse";
+  // Basic validation
+  if (!nameEl.value.trim() || !emailEl.value.trim() || !subjectEl.value.trim() || !messageEl.value.trim()) {
+    showFeedback('⚠️ Please fill in all fields before sending.', 'warn');
+    return;
+  }
 
-  const data = new FormData();
-  data.append("entry.111111111", document.getElementById("name").value);
-  data.append("entry.222222222", document.getElementById("email").value);
-  data.append("entry.333333333", document.getElementById("subject").value);
-  data.append("entry.444444444", document.getElementById("message").value);
+  // Loading state
+  btn.disabled = true;
+  btn.innerHTML = '⏳ &nbsp;Sending…';
 
-  fetch(formURL, {
-    method: "POST",
-    mode: "no-cors",
-    body: data
-  });
+  // Build form data
+  const body = new FormData();
+  body.append(FORM_ENTRY_NAME,    nameEl.value.trim());
+  body.append(FORM_ENTRY_EMAIL,   emailEl.value.trim());
+  body.append(FORM_ENTRY_SUBJECT, subjectEl.value.trim());
+  body.append(FORM_ENTRY_MESSAGE, messageEl.value.trim());
 
-  btn.textContent = "✅ Message Sent!";
-  btn.style.background = "linear-gradient(135deg,#10b981,#06b6d4)";
+  // Submit via no-cors (Google Forms doesn't support CORS — data IS received
+  // on the Google Form even though we can't read the response status)
+  fetch(GOOGLE_FORM_URL, { method: 'POST', mode: 'no-cors', body })
+    .then(() => {
+      showFeedback("✅ Message sent! I'll get back to you soon.", 'ok');
+      nameEl.value = ''; emailEl.value = ''; subjectEl.value = ''; messageEl.value = '';
+      btn.innerHTML = '✅ &nbsp;Sent!';
+      setTimeout(() => { btn.disabled = false; btn.innerHTML = '🚀 &nbsp;Send Message'; }, 4000);
+    })
+    .catch(() => {
+      showFeedback('❌ Something went wrong. Please email me directly.', 'err');
+      btn.disabled = false;
+      btn.innerHTML = '🚀 &nbsp;Send Message';
+    });
 
-  setTimeout(() => {
-    btn.textContent = "🚀 Send Message";
-    btn.style.background = "";
-  }, 3500);
+  function showFeedback(msg, type) {
+    feedback.style.display = 'block';
+    feedback.textContent = msg;
+    feedback.style.background = type === 'ok'   ? 'rgba(16,185,129,0.12)'
+                               : type === 'warn' ? 'rgba(251,191,36,0.12)'
+                               :                  'rgba(239,68,68,0.12)';
+    feedback.style.border = '1px solid ' + (
+      type === 'ok'   ? 'rgba(16,185,129,0.35)' :
+      type === 'warn' ? 'rgba(251,191,36,0.35)'  : 'rgba(239,68,68,0.35)');
+    feedback.style.color = type === 'ok'   ? 'var(--green2)' :
+                           type === 'warn' ? '#fbbf24'        : '#f87171';
+  }
 }
-  btn.textContent = '✅  Message Sent!';
-  btn.style.background = 'linear-gradient(135deg,#10b981,#06b6d4)';
-  setTimeout(() => { btn.textContent = '🚀  Send Message'; btn.style.background = ''; }, 3500);
-  
+
 </script>
 </body>
 </html>
